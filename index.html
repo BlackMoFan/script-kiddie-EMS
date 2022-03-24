@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Dashboard | Script Kiddies</title>
+
+    <!-- Website icon -->
+    <link href="./assets/icons/employee-2.png" rel="icon" type="image/x-icon" />
+
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+
+    <!-- Personal stylesheet -->
+    <link href="./css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <section class="container">
+
+        <!------------- START OF ASIDE ----------------->
+        <aside>
+            <!------------ TOP - LOGO & GROUP NAME ------------------>
+            <section class="top">
+                <div class="logo">
+                    <img src="./assets/images/tux.png">
+                    <h2>Script<span class="danger">Kiddies</span></h2>
+                </div>
+                <div class="close" id="close-button">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </section>
+            <section class="sidebar">
+                <!-- Home -->
+                <!-- <a href="../index.html">
+                    <span class="material-icons-sharp">
+                        home
+                    </span>
+                    <h3>Home</h3>
+                </a> -->
+                <!-- Main overview of the company -->
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+                <!-- List of employees with their details -->
+                <a href="./components/employees.html">
+                    <span class="material-icons-sharp">
+                        groups
+                    </span>
+                    <h3>Employees</h3>
+                </a>
+                <!-- Messaging -->
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        mail_outline
+                    </span>
+                    <h3>Messages</h3>
+                    <span class="message-count">20</span>
+                </a>
+                <!-- About -->
+                <a href="./components/about.html">
+                    <span class="material-icons-sharp">
+                        help_outline
+                    </span>
+                    <h3>About</h3>
+                </a>
+                <!-- Administrative settings (available to the admin account only) -->
+                <!-- This is where CRUD is done -->
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span>
+                    <h3>Settings</h3>
+                </a>
+                <!-- Log out -->
+                <a href="./login.html">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a>
+            </section>
+        </aside>
+        <!----------------------- END OF ASIDE ----------------------->
+
+        <!---------- START OF MAIN CONTENT (CENTER CONTENT) -------------->
+        <main>
+            <h1>Dashboard</h1>
+
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <!---------- START OF INSIGHTS (TOP PART) -------------->
+            <section class="insights">
+                <div class="sales">
+                    <span class="material-icons-sharp">
+                        analytics
+                    </span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Employees</h3>
+                            <h1>69</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">
+                        Last 24 Hours
+                    </small>
+                </div>
+                <!-- TOTAL EMPLOYEES -->
+                <!-------------------- END OF TOTAL SALES ------------------------->
+                <div class="expenses">
+                    <span class="material-icons-sharp">
+                        bar_chart
+                    </span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Expenses</h3>
+                            <h1>₱9,999</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>69%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">
+                        Last 24 Hours
+                    </small>
+                </div>
+                <!-- TOTAL EXPENSES -->
+                <!-------------------- END OF EXPENSES ------------------------->
+                <div class="income">
+                    <span class="material-icons-sharp">
+                        stacked_line_chart
+                    </span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Income</h3>
+                            <h1>₱9,999.99</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>95%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">
+                        Last 24 Hours
+                    </small>
+                </div>
+                <!-- TOTAL INCOME -->
+                <!-------------------- END OF INCOME ------------------------->
+            </section>
+            <!------------- END OF INSIGHTS ------------->
+
+            <!-------------- RECENTLY ADDED EMPLOYEES --------------------->
+            <section class="recent-added">
+                <h2>Recently Added</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Role</th>
+                            <th>Date of Employment</th> <!--- Date of employment ----->
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr>
+                            <td>1</td>
+                            <td>Rod Lester A. Moreno</td>
+                            <td>Full-Stack Developer</td>
+                            <td>03-20-2022</td>
+                            <td class="success">Employed</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Rod Lester A. Moreno</td>
+                            <td>Full-Stack Developer</td>
+                            <td>03-20-2022</td>
+                            <td class="success">Employed</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Rod Lester A. Moreno</td>
+                            <td>Full-Stack Developer</td>
+                            <td>03-20-2022</td>
+                            <td class="warning">On leave</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Rod Lester A. Moreno</td>
+                            <td>Full-Stack Developer</td>
+                            <td>03-20-2022</td>
+                            <td class="success">Employed</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Rod Lester A. Moreno</td>
+                            <td>Full-Stack Developer</td>
+                            <td>03-20-2022</td>
+                            <td class="danger">Resigned</td>
+                            <td class="primary">Details</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </section>
+            <!----------- END OF RECENTLY ADDED -------------------->
+        </main>
+        <!-------------- END OF MAIN CONTENT --------------------->
+
+        <!------- START OF RIGHT CONTENT (ANNOUNCEMENTS, OTHER DETAILS) -------->
+        <section class="right">
+            <!-- START OF TOP -->
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <!-- theme toggle (light or dark)-->
+                <div class="theme-toggler">
+                    <!-- light mode -->
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <!-- dark mode -->
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Juan</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./assets/images/portrait.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- END OF TOP -->
+            <!-- START OF RECENT UPDATES -->
+            <div class="recent-updates">
+                <h2>Recent Updates</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./assets/images/portrait.jpg">
+                        </div>
+                        <div class="message">
+                            <p><b>Rod Moreno</b> recently assigned a role of developer.</p>
+                            <small class="text-muted">2 minutes ago</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./assets/images/portrait.jpg">
+                        </div>
+                        <div class="message">
+                            <p><b>Rod Moreno</b> recently got employed.</p>
+                            <small class="text-muted">3 minutes ago</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./assets/images/portrait.jpg">
+                        </div>
+                        <div class="message">
+                            <p><b>Rod Moreno</b> just resigned.</p>
+                            <small class="text-muted">4 minutes ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF RECENT UPDATES -->
+            <!-- START OF ANALYTICS -->
+            <div class="analytics">
+                <h2>Analytics</h2>
+                <!-- CURRENTLY EMPLOYED -->
+                <div class="item online">
+                    <div class="icon">
+                        <span class="material-icons-sharp">
+                            person
+                        </span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>CURRENTLY EMPLOYED</h3>
+                            <small class="text-muted">Last 7 days</small>
+                        </div>
+                        <h5 class="success">+23%</h5>
+                        <h3>69</h3>
+                    </div>
+                </div>
+                <!-- ON LEAVE -->
+                <div class="item offline">
+                    <div class="icon">
+                        <span class="material-icons-sharp">
+                            person_off
+                        </span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>On leave</h3>
+                            <small class="text-muted">Last 7 days</small>
+                        </div>
+                        <h5 class="warning">+5%</h5>
+                        <h3>3</h3>
+                    </div>
+                </div>
+                <!-- Resigned -->
+                <div class="item customers">
+                    <div class="icon">
+                        <span class="material-icons-sharp">
+                            person_remove
+                        </span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Resigned/Retired/Fired</h3>
+                            <small class="text-muted">Last 7 days</small>
+                        </div>
+                        <h5 class="danger">+2%</h5>
+                        <h3>1</h3>
+                    </div>
+                </div>
+                <div class="item add-category">
+                    <div>
+                        <span class="material-icons-sharp">
+                            add
+                        </span>
+                        <h3>Add Featured</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF ANALYTICS -->
+        </section>
+    </section>
+
+    <script src="./js/recent-add.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

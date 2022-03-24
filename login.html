@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Login | Script Kiddies</title>
+
+    <!-- Website icon -->
+    <link href="./assets/icons/employee-2.png" rel="icon" type="image/x-icon" />
+
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+
+    <!-- Personal stylesheet -->
+    <link href="./css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <section class="container">
+
+        <!------------- START OF ASIDE ----------------->
+        <aside>
+            <!------------ TOP - LOGO & GROUP NAME ------------------>
+            <section class="top">
+                <div class="logo">
+                    <img src="./assets/images/tux.png">
+                    <h2>Script<span class="danger">Kiddies</span></h2>
+                </div>
+                <div class="close" id="close-button">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </section>
+            <section class="sidebar">
+                <!-- Home -->
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">
+                        home
+                    </span>
+                    <h3>Home</h3>
+                </a>
+                <!-- Main overview of the company -->
+                <a href="./index.html">
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+                <!-- List of employees with their details -->
+                <a href="./components/employees.html">
+                    <span class="material-icons-sharp">
+                        groups
+                    </span>
+                    <h3>Employees</h3>
+                </a>
+                <!-- Messaging -->
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        mail_outline
+                    </span>
+                    <h3>Messages</h3>
+                    <span class="message-count">20</span>
+                </a>
+                <!-- About -->
+                <a href="./components/about.html">
+                    <span class="material-icons-sharp">
+                        help_outline
+                    </span>
+                    <h3>About</h3>
+                </a>
+                <!-- Administrative settings (available to the admin account only) -->
+                <!-- This is where CRUD is done -->
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span>
+                    <h3>Settings</h3>
+                </a>
+                <!-- Log out -->
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a>
+            </section>
+        </aside>
+        <!----------------------- END OF ASIDE ----------------------->
+
+        <!---------- START OF MAIN CONTENT (CENTER CONTENT) -------------->
+        <main>
+            <h1>Employee Management System</h1>
+
+            <!-- <div class="date">
+                <input type="date">
+            </div> -->
+
+            <!---------- START OF INSIGHTS (TOP PART) -------------->
+            <section class="insights">
+                <div class="sales">
+                    <span class="material-icons-sharp">
+                        hub
+                    </span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Script Kiddies</h3>
+                            <h1>Login</h1>
+                            <form action="./index.html" method="POST" id="login-form">
+                                <input type="text" name="username" placeholder="username" >
+                                <input type="password" name="password" placeholder="password">
+                                <!-- <a href="./index.html"><button id="submit-btn">Submit</button></a> -->
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
+                        <!-- <div>
+                            <form>
+                                <input type="text" name="username" placeholder="username" >
+                                <input type="pasword" name="password" placeholder="password">
+                                <button href="#">Submit</button>
+                            </form>
+                        </div> -->
+                        <!-- <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div> -->
+                    </div>
+                    <!-- <small class="text-muted">
+                        Last 24 hours
+                    </small> -->
+                </div>
+                <!-- TOTAL EMPLOYEES -->
+                <!-------------------- END OF TOTAL SALES ------------------------->
+                <div class="expenses">
+                    <span class="material-icons-sharp">
+                        code
+                    </span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Script Kiddies</h3>
+                            <h1>The team</h1>
+                            <p>Product Manager: Jazmin Cortez</p>
+                            <p>Developer: Rod Moreno</p>
+                        </div>
+                        <div class="progress">
+                            <!-- <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg> -->
+                            <!-- <div class="number">
+                                <p>81%</p>
+                            </div> -->
+                            <span class="material-icons-sharp">
+                                html
+                            </span>
+                            <span class="material-icons-sharp">
+                                css
+                            </span>
+                            <span class="material-icons-sharp">
+                                javascript
+                            </span>
+                            <span class="material-icons-sharp">
+                                php
+                            </span>
+                        </div>
+                    </div>
+                    <small class="text-muted">
+                        blackmofan &copy 2022. All Rights Reserved.
+                    </small>
+                </div>
+                <!-- TOTAL EXPENSES -->
+                <!-------------------- END OF EXPENSES ------------------------->
+            </section>
+            <!------------- END OF INSIGHTS ------------->
+            <!----------- END OF RECENTLY ADDED -------------------->
+        </main>
+        <!-------------- END OF MAIN CONTENT --------------------->
+
+        <!------- START OF RIGHT CONTENT (ANNOUNCEMENTS, OTHER DETAILS) -------->
+        <section class="right">
+            <!-- START OF TOP -->
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <!-- theme toggle (light or dark)-->
+                <div class="theme-toggler">
+                    <!-- light mode -->
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <!-- dark mode -->
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Juan</b></p>
+                        <!-- <small class="text-muted">Admin</small> -->
+                    </div>
+                    <div class="profile-photo">
+                        <!-- <img src="./assets/images/portrait.jpg"> -->
+                    </div>
+                </div>
+            </div>
+            <!-- END OF TOP -->
+
+        </section>
+    </section>
+
+    <script src="./js/recent-add.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
